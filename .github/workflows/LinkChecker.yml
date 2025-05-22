@@ -22,6 +22,7 @@ jobs:
         if: env.lychee_exit_code != 0
         uses: peter-evans/create-issue-from-file@v4
         with:
+  args: README.md
           title: "[Bot] Broken Links Report"
           content-filepath: ./lychee/out.md
           labels: report
